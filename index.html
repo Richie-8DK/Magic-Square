@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Magic Square</title>
     <link rel="stylesheet" href="style.css">
     <script src='main.js'></script>
 
-  </head>
-  <body onload="calcMSquare();">
+</head>
+
+<body onload="constructMSquare();">
     <h1>Magic Square</h1>
-    <form class="confbox" onsubmit="calcMSquare(); return false;">
-      Size: <input id="size" type="number" min="3" max="32" value="5">
-      <input type="submit" name="cd" value="Calculate!">
+    <form class="confbox" onsubmit="constructMSquare(); return false;" method="post">
+        Size: <input id="size" type="number" min="3" max="32" value="5">
+        <input type="submit" name="cd" value="Calculate!">
     </form>
     <div class="square">
-      <div id='quadrat'>
-        <p class="row"></p>
-      </div>
+        <div id='quadrat'>
+            <p class="row"></p>
+        </div>
     </div>
-    <script type="text/javascript">
-      // hahahah = [];
-      // x = 5;
-      // for (var i = 0; i < x; i++) {
-      //   newRow = [];
-      //   for (var u = 0; u < x; u++) {
-      //     newRow.push(0);
-      //   }
-      //   retSquare.push(newRow);
-      // }
-      //
-    </script>
-  </body>
+</body>
+
 </html>

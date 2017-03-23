@@ -17,6 +17,7 @@ body {
   display: table;
   border: solid;
   border-width: thick;
+  border-radius: 5px;
   background-color: rgb(84,156,251);
   border-color: rgb(0,34,138);
   margin: 0 auto;
@@ -28,11 +29,13 @@ span {
   height: 50px;
   margin: 0;
   border: solid;
-  border-width: medium;
+  border-width: 5px;
   padding: 0;
   text-align: center;
   vertical-align: middle;
   border-color: rgb(0,34,138);
+  font-weight: bold;
+  color: rgb(0,34,138);
 
 }
 
