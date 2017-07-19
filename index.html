@@ -2,24 +2,24 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Magic Square</title>
-    <link rel="stylesheet" href="style.css">
-    <script src='main.js'></script>
+  <meta charset="utf-8">
+  <title>Magic Square</title>
+  <link rel="stylesheet" href="style.css">
+  <script src='main.js'></script>
 
 </head>
 
 <body onload="constructMSquare();">
-    <h1>Magic Square</h1>
-    <form class="confbox" onsubmit="constructMSquare(); return false;" method="post">
-        Size: <input id="size" type="number" min="3" max="32" value="5">
-        <input type="submit" name="cd" value="Calculate!">
-    </form>
-    <div class="square">
-        <div id='quadrat'>
-            <p class="row"></p>
-        </div>
+  <h1>Magic Square</h1>
+  <form class="confbox" onsubmit="constructMSquare(); return false;" method="post">
+    Size: <input id="size" type="number" min="3" max="32" value="5">
+    <input type="submit" name="cd" value="Calculate!">
+  </form>
+  <div class="square">
+    <div id='quadrat'>
+      <p class="row"></p>
     </div>
+  </div>
 </body>
 
 </html>
