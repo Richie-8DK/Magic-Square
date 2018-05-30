@@ -1,6 +1,6 @@
 # Magic Squares
 
-This repository contains a [website](https://the-morpheus.de/Tools/magicsquares.php), that constructs magic squares.
+This repository contains a [website](https://richie-8dk.github.io/Magic-Square/), that constructs magic squares.
 ***
 
 You can read here about the most used algorithms:
