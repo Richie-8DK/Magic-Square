@@ -1,24 +1,28 @@
+var size = 0
+var square = []
+
 function constructMSquare() {
   size = document.getElementById('size').value; // squaresize
 
   // choose generatinalgorithm depending on squaresize( odd, even or doubleeven(evener))
   if (size % 2 == 0) {
     if (size % 4 == 0) {
-      var square = evenerMSquare(size);
+      square = evenerMSquare(size);
     } else {
-      var square = evenMSquare(size);
+      square = evenMSquare(size);
     }
   } else {
-    var square = oddMSquare(size);
+    square = oddMSquare(size);
   }
 
-  console.log(square);
   if (check(square)) {
     displaySquare(square);
   }
 
-  return false;
 
+  document.getElementById('save').addEventListener('click', save)
+
+  return false;
 }
 
 function isCellempty(square, column, row, squaresize, startX,  startY) {
@@ -390,4 +394,20 @@ function displaySquare(square) {
     addRow(square);
 
   }
+}
+
+function save() {
+  console.log('hi')
+  var a = document.createElement("a");
+  document.body.appendChild(a);
+  a.style = "display: none";
+
+  var data = square.reduce((data, row) => data + '\n' + row.join(','), '')
+
+  var blob = new Blob([data], {type: "text/csv"}),
+      url = window.URL.createObjectURL(blob);
+  a.href = url;
+  a.download = `magic-square_${size}.csv`;
+  a.click();
+  window.URL.revokeObjectURL(url);
 }
